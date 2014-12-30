@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "L.GeoSearch": "*",
+    "Leaflet.awesome-markers": "*",
+    "leaflet": "*"
+  },
+  "devDependencies": {
+    "purescript-quickcheck": "*"
+  },
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules"
+  ],
+  "name": "purescript-leaflet"
+}

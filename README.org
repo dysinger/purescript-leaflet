@@ -1,0 +1,24 @@
+* Build
+
+  This project uses https://github.com/bodil/pulp to build.
+
+  Globaly install pulp:
+  #+begin_src sh
+    npm install --global pulp
+  #+end_src
+
+  Locally install pulp:
+  #+begin_src sh
+    export PATH=$PWD/node_modules/.bin:$PATH
+    npm install pulp
+  #+end_src
+
+  Install dependencies:
+  #+begin_src sh
+    pulp dep install
+  #+end_src
+
+  Build & test:
+  #+begin_src sh
+    pulp test
+  #+end_src
