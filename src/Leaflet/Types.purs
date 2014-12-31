@@ -37,20 +37,6 @@ type MarkerOptions r = { icon :: Icon | r }
 
 type PopupOptions r = { | r }
 
-type PathOptions = { stroke :: Boolean,
-                     color :: String,
-                     weight :: Number,
-                     opacity :: Number,
-                     fill :: Boolean,
-                     fillColor :: String,
-                     fillOpacity :: Number,
-                     dashArray :: String,
-                     lineCap :: String,
-                     lineJoin :: String,
-                     clickable :: Boolean,
-                     pointerEvents :: String,
-                     className :: String }
-
 -- All PathOptions plus a few more options.
 type PolylineOptions = { stroke :: Boolean,
                          color :: String,
