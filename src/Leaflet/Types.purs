@@ -19,6 +19,7 @@ foreign import data Map :: *
 foreign import data Marker :: *
 foreign import data Popup :: *
 foreign import data TileLayer :: *
+foreign import data Polyline :: *
 
 class Layer a where
   toILayer :: a -> ILayer
@@ -35,3 +36,20 @@ type TileLayerOptions r = { subdomains :: [String] | r }
 type MarkerOptions r = { icon :: Icon | r }
 
 type PopupOptions r = { | r }
+
+-- All PathOptions plus a few more options.
+type PolylineOptions = { stroke :: Boolean,
+                         color :: String,
+                         weight :: Number,
+                         opacity :: Number,
+                         fill :: Boolean,
+                         fillColor :: String,
+                         fillOpacity :: Number,
+                         dashArray :: String,
+                         lineCap :: String,
+                         lineJoin :: String,
+                         clickable :: Boolean,
+                         pointerEvents :: String,
+                         className :: String,
+                         smoothFactor :: Number,
+                         noClip :: Boolean }
