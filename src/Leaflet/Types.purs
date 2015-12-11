@@ -6,8 +6,6 @@
 
 module Leaflet.Types where
 
-import Control.Monad.Eff
-
 type URL = String
 
 foreign import data ILayer :: *
@@ -18,6 +16,7 @@ foreign import data LayerGroup :: *
 foreign import data Map :: *
 foreign import data Marker :: *
 foreign import data Popup :: *
+foreign import data Polyline :: *
 foreign import data TileLayer :: *
 
 type MapOptions = { attributionControl :: Boolean,
@@ -31,3 +30,6 @@ type TileLayerOptions r = { subdomains :: Array String | r }
 type MarkerOptions r = { icon :: Icon | r }
 
 type PopupOptions r = { | r }
+
+type PolylineOptions r = { | r }
+

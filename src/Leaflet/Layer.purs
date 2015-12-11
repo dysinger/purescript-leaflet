@@ -9,6 +9,7 @@ module Leaflet.Layer where
 import Control.Monad.Eff
 import Leaflet.LayerGroup
 import Leaflet.Marker
+import Leaflet.Polyline
 import Leaflet.Popup
 import Leaflet.TileLayer
 import Leaflet.Types
@@ -32,3 +33,7 @@ instance popupLayer :: Layer Popup where
 instance tileLayerLayer :: Layer TileLayer where
   toILayer = tileLayerToILayer
   addTo = addTileLayerToMap
+
+instance polylineLayer :: Layer Polyline where
+  toILayer = polylineToILayer
+  addTo = addPolylineToMap

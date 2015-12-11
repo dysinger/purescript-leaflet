@@ -2,10 +2,8 @@
   "dependencies": {
     "L.GeoSearch": "*",
     "Leaflet.awesome-markers": "*",
-    "leaflet": "*"
-  },
-  "devDependencies": {
-    "purescript-quickcheck": "*"
+    "leaflet": "*",
+    "purescript-eff": "*"
   },
   "ignore": [
     "**/.*",
