@@ -3,7 +3,7 @@
     "L.GeoSearch": "*",
     "Leaflet.awesome-markers": "*",
     "leaflet": "*",
-    "purescript-prelude": "*"
+    "purescript-eff": "*"
   },
   "ignore": [
     "**/.*",
