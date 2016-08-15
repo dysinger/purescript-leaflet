@@ -6,11 +6,10 @@
 
 module Test.Main where
 
-import Control.Monad.Eff
-import Debug.Trace
-import Test.QuickCheck
+import Control.Applicative
+import Control.Monad.Eff (Eff)
+import Data.Unit (Unit, unit)
 
-main = do
+main :: Eff () Unit
+main = pure unit
 
-  trace "(+) should add two numbers and give their sum"
-  quickCheck $ \n -> n + n == 2 * n <?> show n ++ " + " ++ show n ++ " failed"
